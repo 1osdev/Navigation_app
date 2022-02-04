@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-NY-P39">
-                                <rect key="frame" x="25" y="337.5" width="364" height="275"/>
+                                <rect key="frame" x="25" y="338.5" width="364" height="273"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BB-2s-IcF">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="36"/>
@@ -52,16 +52,15 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTm-IA-dyi">
-                                        <rect key="frame" x="0.0" y="224" width="364" height="51"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTm-IA-dyi">
+                                        <rect key="frame" x="0.0" y="224" width="364" height="49"/>
                                         <color key="backgroundColor" red="1" green="0.2342758559" blue="0.237120936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sign In" cornerStyle="small">
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign In"/>
                                         <connections>
-                                            <action selector="signInBtnAct:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wkc-KM-RGr"/>
+                                            <action selector="signInBtnAct" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DwS-6h-w7L"/>
+                                            <segue destination="WCK-Gh-gs8" kind="show" id="2ni-FU-VKt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -91,7 +90,7 @@
                     <navigationItem key="navigationItem" id="GXU-VF-pTm"/>
                     <connections>
                         <outlet property="emailTfOut" destination="2lh-SL-zxg" id="Ve8-tS-CC3"/>
-                        <outlet property="errorLblOut" destination="Ad7-9Q-aJO" id="JgD-l9-GvY"/>
+                        <outlet property="errorLblOut" destination="Ad7-9Q-aJO" id="syd-CT-eGk"/>
                         <outlet property="passTfOut" destination="5YG-9N-hdQ" id="0JV-7a-cGX"/>
                         <outlet property="signInOut" destination="bTm-IA-dyi" id="MOq-Gg-hcq"/>
                     </connections>
@@ -108,7 +107,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Js6-PI-qPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1175" y="110"/>
+            <point key="canvasLocation" x="1184" y="92"/>
+        </scene>
+        <!--MainStoryboard-->
+        <scene sceneID="eqZ-R3-LYa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainStoryboard" id="WCK-Gh-gs8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aEe-p3-zl2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFp-ix-3wO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0nm-PU-RkW">

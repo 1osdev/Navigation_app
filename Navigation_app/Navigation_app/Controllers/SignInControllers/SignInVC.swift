@@ -12,25 +12,25 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailTfOut: UITextField!
     @IBOutlet weak var passTfOut: UITextField!
     @IBOutlet weak var errorLblOut: UILabel!
-    
+
     @IBOutlet weak var signInOut: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboardWhenTappedAround()
     }
-    
+
     @IBAction func emailTfAct(_ sender: UITextField) {
         signInOut.isEnabled = isEmptyTF()
     }
-    
+
     @IBAction func passTfAct(_ sender: UITextField) {
         signInOut.isEnabled = isEmptyTF()
     }
-    
+
     @IBAction func signInBtnAct() {
     }
-    
+
     func isEmptyTF() -> Bool {
         errorLblOut.isHidden = true
         if let emailTfText = emailTfOut.text,
@@ -40,8 +40,15 @@ class SignInVC: UIViewController {
             return false
         }
     }
-    
-//
+
+    //let email = UserDefaults.standard.string(forKey: email)
+    //let pass = UserDefaults.standard.string(forKey: pass)
+
+    @IBAction private func saveUser(_ sender: Any?) {
+        var email = emailTfOut.text
+        var pass = passTfOut.text
+
+    }
 
     /*
     // MARK: - Navigation

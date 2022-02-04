@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6D82CA327AB4650004A0994 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D82CA227AB4650004A0994 /* UIViewControllerExt.swift */; };
 		A6DA2C3D27A52C0F00FA9617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA2C3C27A52C0F00FA9617 /* AppDelegate.swift */; };
 		A6DA2C3F27A52C0F00FA9617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA2C3E27A52C0F00FA9617 /* SceneDelegate.swift */; };
 		A6DA2C4127A52C0F00FA9617 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA2C4027A52C0F00FA9617 /* Constants.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6D82CA227AB4650004A0994 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		A6DA2C3927A52C0F00FA9617 /* Navigation_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DA2C3C27A52C0F00FA9617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6DA2C3E27A52C0F00FA9617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6D82CA427AB465A004A0994 /* Exstensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D82CA227AB4650004A0994 /* UIViewControllerExt.swift */,
+			);
+			path = Exstensions;
+			sourceTree = "<group>";
+		};
 		A6DA2C3027A52C0F00FA9617 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		A6DA2C3B27A52C0F00FA9617 /* Navigation_app */ = {
 			isa = PBXGroup;
 			children = (
+				A6D82CA427AB465A004A0994 /* Exstensions */,
 				A6DA2C5227A53D1B00FA9617 /* Services */,
 				A6DA2C5F27A53EF100FA9617 /* Controllers */,
 				A6DA2C6027A53F3500FA9617 /* Views */,
@@ -219,6 +230,7 @@
 			files = (
 				A6DA2C4127A52C0F00FA9617 /* Constants.swift in Sources */,
 				A6DA2C3D27A52C0F00FA9617 /* AppDelegate.swift in Sources */,
+				A6D82CA327AB4650004A0994 /* UIViewControllerExt.swift in Sources */,
 				A6DA2C5727A53DEB00FA9617 /* CreateAccountVC.swift in Sources */,
 				A6DA2C5427A53D9B00FA9617 /* SignInVC.swift in Sources */,
 				A6DA2C5927A53E0800FA9617 /* CodeVerifVC.swift in Sources */,

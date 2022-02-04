@@ -7,23 +7,48 @@
 
 import UIKit
 
-class CodeVerifVC: UIViewController {
-
+final class CodeVerifVC: UIViewController {
+    
+    @IBOutlet private weak var codeSecretLbl: UILabel!
+    
+    private var code: String = String(Int.random(in: 10000...99999))
+    
+    var email: String?
+    var name: String?
+    var pass: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+        hideKeyboardWhenTappedAround()
     }
     
-
-    /*
+    @IBAction func codeTFChanged(_ sender: UITextField) {
+        guard let ourCode = sender.text else { return }
+        if ourCode.count == 5 {
+            if ourCode.count == 5, VerificationService.isPassCofirm(pass1: code, pass2: ourCode) {
+                performSegue(withIdentifier: "ShowWelcomeScreen", sender: nil)
+            } else {
+                //TODO: - start timer
+            }
+        }
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        guard let email = email,
+            let name = name,
+            let pass = pass,
+            let destVC = segue.destination as? WelcomeVC else { return }
 
+        destVC.email = email
+        destVC.name = name
+        destVC.pass = pass
+    }
+    
+    private func setupUI() {
+        codeSecretLbl.text = "please enter code \(code) from \(email ?? "")"
+    }
 }
+

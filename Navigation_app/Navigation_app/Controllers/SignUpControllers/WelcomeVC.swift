@@ -7,23 +7,20 @@
 
 import UIKit
 
-class WelcomeVC: UIViewController {
+final class WelcomeVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    var email: String?
+    var name: String?
+    var pass: String?
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func continueBtnPress() {
+    guard let email = email,
+          let name = name,
+          let pass = pass else { return }
+        UserDefaults.standard.set(name, forKey: name)
+        UserDefaults.standard.set(email, forKey: email)
+        UserDefaults.standard.set(pass, forKey: pass)
+        navigationController?.popToRootViewController(animated: true)
     }
-    */
-
 }

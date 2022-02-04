@@ -6,14 +6,6 @@
 //
 import Foundation
 
-//class VerificaionService: UIViewController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-
 enum PasswordStrength: Int {
     case veryWeak
     case weak

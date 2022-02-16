@@ -124,28 +124,28 @@
                                                             <stackView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-dV-TBI">
                                                                 <rect key="frame" x="0.0" y="78.5" width="364" height="10"/>
                                                                 <subviews>
-                                                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-7l-eHi">
+                                                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-7l-eHi">
                                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="10" id="iRZ-qO-2YW"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pj-nu-DKo">
+                                                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pj-nu-DKo">
                                                                         <rect key="frame" x="93.5" y="0.0" width="83.5" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="10" id="dE2-oI-zmR"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-G4-Gvt">
+                                                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-G4-Gvt">
                                                                         <rect key="frame" x="187" y="0.0" width="83.5" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="10" id="c4v-J2-8W2"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtS-pe-yLH">
+                                                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtS-pe-yLH">
                                                                         <rect key="frame" x="280.5" y="0.0" width="83.5" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                         <constraints>

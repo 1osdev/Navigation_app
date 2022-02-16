@@ -40,12 +40,11 @@ class CreateAccountVC: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let email = emailTF.text,
-            let name = nameTF.text,
             let pass = passTF.text,
             let destVC = segue.destination as? CodeVerifVC else { return }
 
         destVC.email = email
-        destVC.name = name
+        destVC.name = nameTF.text
         destVC.pass = pass
     }
 
@@ -53,15 +52,16 @@ class CreateAccountVC: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
 
-    @IBAction func emailTFChanged(_ sender: UITextField) {
+    @IBAction private func emailTFChanged(_ sender: UITextField) {
         guard let email = sender.text else { return }
         isValidEmail = VerificationService.isValidEmail(email: email)
         emailErrorLbl.isHidden = isValidEmail
         updateBtnState()
     }
 
-    @IBAction func passTFChanged(_ sender: UITextField) {
+    @IBAction private func passTFChanged(_ sender: UITextField) {
 
+        // chack pass by strength
         guard let pass1 = sender.text else { return }
         passwordStrength = VerificationService.isValidPassword(pass: pass1)
         passErrorLbl.isHidden = !(passwordStrength == .veryWeak)
@@ -73,9 +73,11 @@ class CreateAccountVC: UIViewController {
             }
         }
 
+        // check confPass
         guard let pass2 = confPassTF.text else { return }
         updatePassErrorLbl(pass1: pass1, pass2: pass2)
 
+        // updateBtn
         updateBtnState()
     }
 

@@ -18,9 +18,9 @@ final class WelcomeVC: UIViewController {
     guard let email = email,
           let name = name,
           let pass = pass else { return }
-        UserDefaults.standard.set(name, forKey: name)
-        UserDefaults.standard.set(email, forKey: email)
-        UserDefaults.standard.set(pass, forKey: pass)
+        UserDefaults.standard.set(name, forKey: Constants.name)
+        UserDefaults.standard.set(email, forKey: Constants.email)
+        UserDefaults.standard.set(pass, forKey: Constants.pass)
         navigationController?.popToRootViewController(animated: true)
     }
 }

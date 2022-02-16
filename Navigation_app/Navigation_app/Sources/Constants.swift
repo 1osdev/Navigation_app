@@ -7,13 +7,10 @@
 
 import UIKit
 
-class Constants: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+struct Constants {
+    // Keys for UserDefaults
+    static let name = "name"
+    static let pass = "pass"
+    static let email = "email"
 }
 
